@@ -1,3 +1,222 @@
 {
-    "songs": []
+    "next_id": 32,
+    "songs": [
+        {
+            "album": "Unorthodox Jukebox",
+            "artist": "Bruno Mars",
+            "id": 1,
+            "title": "Locked Out of Heaven",
+            "year": 2012
+        },
+        {
+            "album": "A Night at the Opera",
+            "artist": "Queen",
+            "id": 2,
+            "title": "Bohemian Rhapsody",
+            "year": 1975
+        },
+        {
+            "album": "Thriller",
+            "artist": "Michael Jackson",
+            "id": 3,
+            "title": "Billie Jean",
+            "year": 1982
+        },
+        {
+            "album": "Nevermind",
+            "artist": "Nirvana",
+            "id": 4,
+            "title": "Smells Like Teen Spirit",
+            "year": 1991
+        },
+        {
+            "album": "21",
+            "artist": "Adele",
+            "id": 5,
+            "title": "Rolling in the Deep",
+            "year": 2010
+        },
+        {
+            "album": "Hunting High and Low",
+            "artist": "a-ha",
+            "id": 6,
+            "title": "Take On Me",
+            "year": 1985
+        },
+        {
+            "album": "Imagine",
+            "artist": "John Lennon",
+            "id": 7,
+            "title": "Imagine",
+            "year": 1971
+        },
+        {
+            "album": "Hotel Califonia",
+            "artist": "Eagles",
+            "id": 8,
+            "title": "Hotel California",
+            "year": 1976
+        },
+        {
+            "album": "8 Mile",
+            "artist": "Eminem",
+            "id": 9,
+            "title": "Lose Yourself",
+            "year": 2002
+        },
+        {
+            "album": "Divide",
+            "artist": "Ed Sheeran",
+            "id": 10,
+            "title": "Shape of You",
+            "year": 2017
+        },
+        {
+            "album": "A Rush of Blood to the Head",
+            "artist": "Coldplay",
+            "id": 11,
+            "title": "Clocks",
+            "year": 2002
+        },
+        {
+            "album": "Appetite for Destruction",
+            "artist": "Guns N Roses",
+            "id": 12,
+            "title": "Sweet Child o Mine",
+            "year": 1987
+        },
+        {
+            "album": "Talking Book",
+            "artist": "Stevie Wonder",
+            "id": 13,
+            "title": "Superstition",
+            "year": 1972
+        },
+        {
+            "album": "After Hours",
+            "artist": "The Weeknd",
+            "id": 14,
+            "title": "Blinding Lights",
+            "year": 2020
+        },
+        {
+            "album": "Toto IV",
+            "artist": "Toto",
+            "id": 15,
+            "title": "Africa",
+            "year": 1982
+        },
+        {
+            "album": "Morning Glory?",
+            "artist": "Oasis",
+            "id": 16,
+            "title": "Wonderwall",
+            "year": 1995
+        },
+        {
+            "album": "Highway 61 Revisited",
+            "artist": "Bob Dylan",
+            "id": 17,
+            "title": "Like a Rolling Stone",
+            "year": 1965
+        },
+        {
+            "album": "Heroes",
+            "artist": "David Bowie",
+            "id": 18,
+            "title": "Heroes",
+            "year": 1977
+        },
+        {
+            "album": "Back to Black",
+            "artist": "Amy Winehouse",
+            "id": 19,
+            "title": "Back to Black",
+            "year": 2006
+        },
+        {
+            "album": "By the Way",
+            "artist": "Red Hot Chili Peppers",
+            "id": 20,
+            "title": "Cant Stop",
+            "year": 2002
+        },
+        {
+            "album": "Elephant",
+            "artist": "The White Stripes",
+            "id": 21,
+            "title": "Seven Nation Army",
+            "year": 2003
+        },
+        {
+            "album": "As I Am",
+            "artist": "Alicia Keys",
+            "id": 22,
+            "title": "No One ",
+            "year": 2007
+        },
+        {
+            "album": "Night Visions",
+            "artist": "Imagine Dragons",
+            "id": 23,
+            "title": "Radioactive",
+            "year": 2012
+        },
+        {
+            "album": "Pure Heroine",
+            "artist": "Lorde",
+            "id": 24,
+            "title": "Royals",
+            "year": 2013
+        },
+        {
+            "album": "Saturday Night Fever",
+            "artist": "Bee Gees",
+            "id": 25,
+            "title": "Stayin Alive",
+            "year": 1977
+        },
+        {
+            "album": "Hot Fuss",
+            "artist": "The Killers",
+            "id": 26,
+            "title": "Mr.Brightside",
+            "year": 2004
+        },
+        {
+            "album": "Version",
+            "artist": "Mark Ronson feat. Amy Winehouse",
+            "id": 27,
+            "title": "Valerie",
+            "year": 2007
+        },
+        {
+            "album": "Escape",
+            "artist": "Journey",
+            "id": 28,
+            "title": "Dont Stop Believin",
+            "year": 1981
+        },
+        {
+            "album": "Pablo Honey",
+            "artist": "Radiohead",
+            "id": 29,
+            "title": "Creep",
+            "year": 1993
+        },
+        {
+            "album": "Future Nostalgia",
+            "artist": "Dua Lipa",
+            "id": 30,
+            "title": "Levitating",
+            "year": 2020
+        },
+        {
+            "album": "Divinely Uninspired to a Hellish Extent",
+            "artist": "Lewis Capaldi",
+            "id": 31,
+            "title": "Someone You Loved",
+            "year": 2019
+        }
+    ]
 }
