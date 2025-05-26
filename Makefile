@@ -1,3 +1,4 @@
+# Makefile wurde mit hilfe von Ai erstellt
 DEBUG ?= 1
 ENABLE_WARNINGS ?= 1
 WARNINGS_AS_ERRORS ?= 0

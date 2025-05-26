@@ -7,10 +7,10 @@ using json = nlohmann::json;
 using namespace std;
 
 
-nlohmann::json& MusicLibrary::testDataAccess() {
+nlohmann::json& MusicLibrary::testDataAccess() {                        //Befehl wurde mit Hilfe von Ai erarbeitet
     return libraryData;
 }
-const nlohmann::json& MusicLibrary::getLibraryData() const {
+const nlohmann::json& MusicLibrary::getLibraryData() const {            //Befehl wurde mit Hilfe von Ai erarbeitet
     return libraryData;
 }
 

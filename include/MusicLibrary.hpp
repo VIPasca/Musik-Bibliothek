@@ -9,7 +9,7 @@ private:
 
 public:
     nlohmann::json& testDataAccess();
-    const nlohmann::json& getLibraryData() const;
+    const nlohmann::json& getLibraryData() const;           //Befehl wurde mit Hilfe von Ai erarbeitet
     MusicLibrary(const std:: string& file);
     void loadOrCreate();
     void save();

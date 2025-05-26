@@ -29,7 +29,7 @@ TEST_CASE("Ein Song wird erfolgreich hinzugefügt und ID wird erhöht", "[addSon
     MusicLibrary loaded(testFilename);
     loaded.loadOrCreate();
 
-    auto songs = loaded.getLibraryData()["songs"];
+    auto songs = loaded.getLibraryData()["songs"];          //Befehl getLibraryData wurde mit Hilfe von Ai erarbeitet
     REQUIRE(songs.size() == 1);
     REQUIRE(songs[0]["id"] == 1);
     REQUIRE(loaded.getLibraryData()["next_id"] == 2);
