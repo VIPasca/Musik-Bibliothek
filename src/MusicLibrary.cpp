@@ -80,3 +80,44 @@ void MusicLibrary::addSong() {
 
     cout << "Song wurde zur Bibliothek hinzugefuegt.\n";
 }
+
+void MusicLibrary::editSong() {
+    string eingabe;
+    cout << "Gib die ID oder den Titel des Songs ein, welcher bearbeitet werden soll: ";
+    cin.ignore();
+    getline(cin, eingabe);
+
+    bool found = false;
+
+    for (auto& song : libraryData["songs"]) {
+        if (to_string(song["id"].get<int>()) == eingabe || song["title"] == eingabe) {
+            found = true;
+            string title, artist, album;
+            string yearStr;
+
+            cout << "Neuer Titel (" << song["title"] << "): ";
+            getline(cin, title);
+            if (!title.empty()) song["title"] = title;
+            
+            cout << "Neuer Künstler (" << song["artist"] << "): ";
+            getline(cin, artist);
+            if (!artist.empty()) song["artist"] = artist;
+
+            cout << "Neues Album (" << song["album"] << "): ";
+            getline(cin, album);
+            if (!album.empty()) song["album"] = album;
+
+            cout << "Neues Erscheinungsjahr (" << song["year"] << "): ";
+            getline(cin, yearStr);
+            if (!yearStr.empty()) song["year"] = stoi(yearStr);
+
+            save();
+            cout << "Song wurde aktualisiert.\n";
+            break;
+        }
+    }
+
+    if (!found) {
+        cout << "Kein passender Song gefunden.\n";
+    }
+}

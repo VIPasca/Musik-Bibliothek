@@ -15,4 +15,5 @@ public:
     void save();
     void printLibrary();
     void addSong();
+    void editSong();
 };
