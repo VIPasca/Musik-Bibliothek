@@ -124,7 +124,6 @@ void MusicLibrary::editSong() {
 
 void MusicLibrary::addPodcast() {
     string title, artist; 
-    // int year;
     int id_Podcast = libraryData["next_id_Podcast"];
 
     cout << "Titel: ";
@@ -133,18 +132,10 @@ void MusicLibrary::addPodcast() {
     cout << "Kuenstler: ";
     getline(cin, artist);
 
-    // cout << "Album: ";
-    // getline(cin, album);
-
-    // cout << "Erscheinungsjahr: ";
-    // cin >> year;
-
     json newPodcast = {
         {"id_Podcast", id_Podcast},
         {"title", title},
         {"artist", artist},
-        // {"album", album},
-        // {"year", year}
     };
 
     libraryData["songs"].push_back(newPodcast);
@@ -154,4 +145,28 @@ void MusicLibrary::addPodcast() {
     save();
 
     cout << "Podcast wurde zur Bibliothek hinzugefuegt.\n";
+}
+
+void MusicLibrary::searchSong() {
+    string searchcommand;
+    cout << "Welcher Song soll gesucht werden?\n";
+    cin.ignore();
+    getline(cin, searchcommand);
+
+    bool found = false;
+
+    for (const auto& song : libraryData["songs"]) {
+        string title = song["title"];
+        if (title.find(searchcommand) != string::npos) {
+            cout << "Gefundener Song:\n";
+            cout << "Titel: " << song["title"] << "\n";
+            cout << "Kuenstler: " << song["artist"] << "\n";
+            cout << "ID: " << song["id"] << "\n";
+            found = true;
+        }
+    }
+
+    if (!found){
+        cout << "Kein Song gefunden.\n";
+    }
 }

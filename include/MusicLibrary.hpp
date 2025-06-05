@@ -17,4 +17,5 @@ public:
     void addSong();
     void editSong();
     void addPodcast();
+    void searchSong();
 };

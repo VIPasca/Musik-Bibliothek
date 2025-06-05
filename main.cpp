@@ -17,6 +17,7 @@ int main() {
         cout << "2. Song hinzufuegen\n";
         cout << "3. Song bearbeiten\n";
         cout << "4. Podcast hinzufuegen\n";
+        cout << "5. Song suchen\n";
         cout << "0. Beenden\n";
         cin >> auswahl;
 
@@ -33,11 +34,14 @@ int main() {
             case 4:
                 lib.addPodcast();
                 break;
+            case 5:
+                lib.searchSong();
+                break;
             case 0:
                 cout << "Programm beendet.\n";
                 break;
             default:
-                cout << "Ungültige Eingabe.\n";
+                cout << "Ungueltige Eingabe.\n";
         }
     } while (auswahl !=0);
 
