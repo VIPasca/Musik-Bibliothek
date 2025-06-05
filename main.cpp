@@ -16,6 +16,7 @@ int main() {
         cout << "1. Bibliothek anzeigen\n";
         cout << "2. Song hinzufuegen\n";
         cout << "3. Song bearbeiten\n";
+        cout << "4. Podcast hinzufuegen\n";
         cout << "0. Beenden\n";
         cin >> auswahl;
 
