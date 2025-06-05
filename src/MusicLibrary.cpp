@@ -121,3 +121,37 @@ void MusicLibrary::editSong() {
         cout << "Kein passender Song gefunden.\n";
     }
 }
+
+void MusicLibrary::addPodcast() {
+    string title, artist; 
+    // int year;
+    int id_Podcast = libraryData["next_id_Podcast"];
+
+    cout << "Titel: ";
+    getline(cin >> ws, title);
+
+    cout << "Kuenstler: ";
+    getline(cin, artist);
+
+    // cout << "Album: ";
+    // getline(cin, album);
+
+    // cout << "Erscheinungsjahr: ";
+    // cin >> year;
+
+    json newPodcast = {
+        {"id_Podcast", id_Podcast},
+        {"title", title},
+        {"artist", artist},
+        // {"album", album},
+        // {"year", year}
+    };
+
+    libraryData["songs"].push_back(newPodcast);
+
+    libraryData["next_id_Podcast"] = id_Podcast +1;
+
+    save();
+
+    cout << "Podcast wurde zur Bibliothek hinzugefuegt.\n";
+}

@@ -29,6 +29,9 @@ int main() {
             case 3:
                 lib.editSong();
                 break;
+            case 4:
+                lib.addPodcast();
+                break;
             case 0:
                 cout << "Programm beendet.\n";
                 break;
