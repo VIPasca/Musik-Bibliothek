@@ -16,4 +16,5 @@ public:
     void printLibrary();
     void addSong();
     void editSong();
+    void addPodcast();
 };
