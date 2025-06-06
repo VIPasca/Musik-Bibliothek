@@ -48,7 +48,7 @@ void MusicLibrary::printLibrary() {
 }
 
 void MusicLibrary::addSong() {
-    string title, artist, album; 
+    string title, artist, album;
     int year;
     int id = libraryData["next_id"];
 
@@ -98,7 +98,7 @@ void MusicLibrary::editSong() {
             cout << "Neuer Titel (" << song["title"] << "): ";
             getline(cin, title);
             if (!title.empty()) song["title"] = title;
-            
+
             cout << "Neuer Künstler (" << song["artist"] << "): ";
             getline(cin, artist);
             if (!artist.empty()) song["artist"] = artist;
@@ -123,7 +123,7 @@ void MusicLibrary::editSong() {
 }
 
 void MusicLibrary::addPodcast() {
-    string title, artist; 
+    string title, artist;
     int id_Podcast = libraryData["next_id_Podcast"];
 
     cout << "Titel: ";
@@ -161,7 +161,7 @@ void MusicLibrary::searchSong() {
             cout << "Gefundener Song:\n";
             cout << "Titel: " << song["title"] << "\n";
             cout << "Kuenstler: " << song["artist"] << "\n";
-            cout << "ID: " << song["id"] << "\n";
+            cout << "ID: " << song["id"] << "\n\n";
             found = true;
         }
     }
