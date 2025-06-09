@@ -23,7 +23,7 @@ Dieses Programm ist eine einfache Musikbibliothek, mit der sich Songs und Podcas
 - Songs hinzufügen: Neue Songs können zur Bibliothek hinzugefügt werden.
 - Songs bearbeiten: Bestehende Songs bearbeiten.
 - Podcast hizufügen: Neue Podcasts zur Bibliothek hinzufügen.
-- Song suchen: Songs können in der Biblothek gesucht werden
-
-Die Daten werden dabei in einer JSON-Datei gespeichert und beim Programmstart automaitsch geladen 
-oder erstellt. 
+- Song suchen: Songs können in der Biblothek gesucht werden.
+- Favoriten anzeigen: Übersicht aller favorisierten Songs.
+  
+Die Daten werden dabei in einer JSON-Datei gespeichert und beim Programmstart automatisch geladen oder erstellt. 
