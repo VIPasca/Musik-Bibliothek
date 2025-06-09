@@ -4,7 +4,7 @@
 #include <fstream>
 #include <cstdio>
 
-TEST_CASE("Bibliothek wird erstllt, wenn keine Datei vorhanden ist", "[loadOrCreate]") {
+TEST_CASE("Bibliothek wird erstellt, wenn keine Datei vorhanden ist", "[loadOrCreate]") {
 
     std::string testDatei = "testbibliothek.json";
 

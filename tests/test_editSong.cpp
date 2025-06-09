@@ -12,7 +12,8 @@ void createTestLibrary(const std::string& filename) {
                 "title": "Altes Lied",
                 "artist": "Alter Kuenstler",
                 "album": "Altes Album",
-                "year": 2023        
+                "year": 2023,
+                "favorite": false
             }
         ]
     })";
@@ -33,6 +34,7 @@ TEST_CASE("Song bearbeiten", "[edit]") {
             song["artist"] = "Neuer Kuenstler";
             song["album"] = "Neues Album";
             song["year"] = 2025;
+            song["favorite"] = true;
         }
     }
 
@@ -46,6 +48,7 @@ TEST_CASE("Song bearbeiten", "[edit]") {
     REQUIRE(json["songs"][0]["artist"] == "Neuer Kuenstler");
     REQUIRE(json["songs"][0]["album"] == "Neues Album");
     REQUIRE(json["songs"][0]["year"] == 2025);
+    REQUIRE(json["songs"][0]["favorite"] == true);
 
     std::remove(testFile.c_str());
 }

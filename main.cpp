@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     MusicLibrary lib("musikbibliothek.json");
     lib.loadOrCreate();
-    
+
     int auswahl;
 
     do {
@@ -18,6 +18,7 @@ int main() {
         cout << "3. Song bearbeiten\n";
         cout << "4. Podcast hinzufuegen\n";
         cout << "5. Song suchen\n";
+        cout << "6. Favoriten anzeigen\n";
         cout << "0. Beenden\n";
         cin >> auswahl;
 
@@ -37,6 +38,9 @@ int main() {
             case 5:
                 lib.searchSong();
                 break;
+            case 6:
+                lib.printFavorites();
+                break;
             case 0:
                 cout << "Programm beendet.\n";
                 break;
@@ -46,5 +50,5 @@ int main() {
     } while (auswahl !=0);
 
     return 0;
-    
+
 }

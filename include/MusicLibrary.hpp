@@ -18,4 +18,5 @@ public:
     void editSong();
     void addPodcast();
     void searchSong();
+    void printFavorites();
 };

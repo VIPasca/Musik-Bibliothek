@@ -19,7 +19,8 @@ TEST_CASE("Ein Song wird erfolgreich hinzugefügt und ID wird erhöht", "[addSon
         {"title", "Testtitel"},
         {"artist", "Testkuenstler"},
         {"album", "Testalbum"},
-        {"year", 2025}
+        {"year", 2025},
+        {"favorite", true}
     };
 
     lib.testDataAccess()["songs"].push_back(testSong);
