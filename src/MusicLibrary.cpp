@@ -71,7 +71,7 @@ void MusicLibrary::addSong() {
 
     cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');   //Befehl wurde mit Hilfe von Ai erarbeitet
 
-    cout << "Zu Favoriten hinzufügen?(Ja/Nein): ";
+    cout << "Zu Favoriten hinzufuegen?(Ja/Nein): ";
     getline(cin, auswahl);
     if(auswahl == "Ja" || auswahl == "ja" || auswahl == "JA")
     {
@@ -83,7 +83,7 @@ void MusicLibrary::addSong() {
         }
         else
         {
-            cout << "Unzulässige Eingabe! Song wird der Favoritenliste nicht hinzugefügt!\n";
+            cout << "Unzulaessige Eingabe! Song wird der Favoritenliste nicht hinzugefuegt!\n";
             favorite = false;
         }
 
@@ -123,7 +123,7 @@ void MusicLibrary::editSong() {
             getline(cin, title);
             if (!title.empty()) song["title"] = title;
 
-            cout << "Neuer Künstler (" << song["artist"] << "): ";
+            cout << "Neuer Kuenstler (" << song["artist"] << "): ";
             getline(cin, artist);
             if (!artist.empty()) song["artist"] = artist;
 
@@ -135,7 +135,7 @@ void MusicLibrary::editSong() {
             getline(cin, yearStr);
             if (!yearStr.empty()) song["year"] = stoi(yearStr);
 
-            cout << "Zu Favoriten hinzufügen?(Ja/Nein) (" << song["favorite"] << "): ";
+            cout << "Zu Favoriten hinzufuegen?(Ja/Nein) (" << song["favorite"] << "): ";
             getline(cin, auswahl);
             if(auswahl == "Ja" || auswahl == "ja" || auswahl == "JA")
             {
@@ -147,7 +147,7 @@ void MusicLibrary::editSong() {
                 }
                 else
                 {
-                    cout << "Unzulässige Eingabe! Songkonfiguration wird nicht verändert!\n";
+                    cout << "Unzulaessige Eingabe! Songkonfiguration wird nicht veraendert!\n";
                 }
 
 

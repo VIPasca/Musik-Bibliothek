@@ -1,5 +1,5 @@
 {
-    "next_id": 38,
+    "next_id": 40,
     "next_id_Podcast": 4,
     "songs": [
         {
@@ -283,6 +283,22 @@
             "id": 37,
             "title": "Bitter Sweet Symphony",
             "year": 1997
+        },
+        {
+            "album": "We Are The People (southstar Remix)",
+            "artist": "Empire Of The Sun, southstar",
+            "favorite": true,
+            "id": 38,
+            "title": "We Are The People - southstar Remix",
+            "year": 2023
+        },
+        {
+            "album": "Sempiternal",
+            "artist": "Brin Me The Horizon",
+            "favorite": true,
+            "id": 39,
+            "title": "Sleepwalking",
+            "year": 2013
         }
     ]
 }
