@@ -28,10 +28,14 @@ void MusicLibrary::loadOrCreate() {
         if (!libraryData.contains("next_id")) {
             libraryData["next_id"] = 1;
         }
+        if (!libraryData.contains("next_id_Podcast")) {
+            libraryData["next_id_Podcast"] = 1;
+        }
     } else {
         cout << "Keine Bibliothek gefunden. Neue Bibliothek wird erstellt.\n";
         libraryData["songs"] = json::array();
         libraryData["next_id"] = 1;
+        libraryData["next_id_Podcast"] = 1;
         save();
     }
 }
@@ -226,7 +230,7 @@ void MusicLibrary::printFavorites()
         if (song.value("favorite", false))                  //Befehl wurde mit Hilfe von Ai erarbeitet
         {
             cout << "Titel: " << song["title"] << endl;
-            cout << "Künstler: " << song["artist"] << endl;
+            cout << "Kuenstler: " << song["artist"] << endl;
             cout << "Album: " << song["album"] << endl;
             cout << "Erscheinungsjahr: " << song["year"] << endl;
             cout << "Song-ID: " << song["id"] << endl;

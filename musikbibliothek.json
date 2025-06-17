@@ -1,5 +1,6 @@
 {
-    "next_id": 36,
+    "next_id": 38,
+    "next_id_Podcast": 4,
     "songs": [
         {
             "album": "Unorthodox Jukebox",
@@ -256,6 +257,32 @@
             "id": 35,
             "title": "Heroes",
             "year": 1977
+        },
+        {
+            "album": "St. Elsewhere",
+            "artist": "Gnarls Barkley",
+            "favorite": false,
+            "id": 36,
+            "title": "Crazy",
+            "year": 2006
+        },
+        {
+            "artist": "Felix Lobrecht",
+            "id_Podcast": 2,
+            "title": "Gemischtes Hack"
+        },
+        {
+            "artist": "Markus Lanz",
+            "id_Podcast": 3,
+            "title": "Lanz und Precht"
+        },
+        {
+            "album": "Urban Hymns",
+            "artist": "The Verve",
+            "favorite": false,
+            "id": 37,
+            "title": "Bitter Sweet Symphony",
+            "year": 1997
         }
     ]
 }
