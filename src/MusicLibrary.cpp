@@ -196,11 +196,16 @@ void MusicLibrary::searchSong() {
     cin.ignore();
     getline(cin, searchcommand);
 
+    transform(searchcommand.begin(), searchcommand.end(), searchcommand.begin(), [](unsigned char c){return tolower(c); });
+
     bool found = false;
 
     for (const auto& song : libraryData["songs"]) {
         if (song.contains("id") && song.contains("favorite")) {
+
             string title = song["title"];
+            transform(title.begin(), title.end(), title.begin(), [](unsigned char c){return tolower(c); });
+
             if (title.find(searchcommand) != string::npos) {
                 cout << "Gefundener Song:\n";
                 cout << "Titel: " << song["title"] << "\n";
